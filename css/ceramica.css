@@ -1,0 +1,7 @@
+@import url('https://fonts.googleapis.com/css2?family=Anton&family=Quicksand:wght@400;500;600&display=swap');
+:root{--bg:#0f0f0f;--fg:#efe9df;--card:#181615;--band:#151312;--line:#ffffff22;--accent:#d08a5c;--on-accent:#140d08;--display:'Anton',sans-serif;--dw:400;--body:'Quicksand',sans-serif;--r:6px}
+h1,h2,h3,.brand{text-transform:uppercase;letter-spacing:.02em}
+.brand img{height:34px;width:auto;mix-blend-mode:lighten}
+.hero{background:radial-gradient(ellipse at 15% 0,#3a241a 0,transparent 60%)}
+.hero .row img{border-radius:var(--r);width:100%;aspect-ratio:4/5;object-fit:cover;max-height:620px}
+@media (max-width:919px){.hero .row img{aspect-ratio:1;order:-1}}

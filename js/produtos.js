@@ -1,0 +1,47 @@
+// Catálogo. Troque preços, textos e imagens aqui. preco: null = "sob consulta".
+const PRODUTOS = {
+  ceramica: [
+    { id: 'c1', nome: 'Caneca Terra', cat: 'Canecas', preco: 180, img: 'caneca-terra', badge: 'Mais vendida',
+      desc: 'Caneca torneada à mão, esmalte duplo terracota e areia. Cada uma sai levemente diferente do forno.',
+      spec: { Material: 'Grês esmaltado', Capacidade: '~300 ml', Cuidados: 'Lava-louça e micro-ondas' },
+      opcoes: { label: 'Cor', valores: ['Terra', 'Areia', 'Duas cores'] } },
+    { id: 'c2', nome: 'Vaso Noite', cat: 'Vasos', preco: 420, img: 'vaso-noite', badge: 'Sob encomenda',
+      desc: 'Vaso de acabamento terracota com esmalte verde-petróleo escorrido. Base para encomenda em outras cores e tamanhos.',
+      spec: { Material: 'Grês esmaltado', Altura: '~24 cm', Prazo: '10 a 15 dias' } },
+    { id: 'c3', nome: 'Pote Areia', cat: 'Potes', preco: 260, img: 'pote-areia', badge: 'Novo',
+      desc: 'Pote de bordas irregulares, com textura natural do barro e detalhe queimado na base.',
+      spec: { Material: 'Argila queimada', Diâmetro: '~20 cm', Uso: 'Mesa e decoração' } },
+    { id: 'c4', nome: 'Peça sob medida', cat: 'Sob encomenda', preco: null, img: 'vaso-noite', badge: 'Sob consulta',
+      desc: 'Conte a ideia e criamos a peça: formato, cor, tamanho e acabamento. Orçamento pelo WhatsApp.',
+      spec: { Prazo: 'A combinar' } }
+  ],
+  prata: [
+    { id: 'p1', nome: 'Anel Orgânico', cat: 'Anéis', preco: 480, img: 'anel-mao', badge: 'Mais vendido',
+      desc: 'Moldado diretamente na prata. Design anatômico com texturas selvagens que abraçam o dedo.',
+      spec: { Material: 'Prata 950', Acabamento: 'Polido ou oxidado', Peso: '~6 g' },
+      opcoes: { label: 'Aro', valores: ['12','13','14','15','16','17','18','19','20','Outro (informar)'] } },
+    { id: 'p2', nome: 'Anel Folha', cat: 'Anéis', preco: 450, img: 'anel-folha', badge: 'Novo',
+      desc: 'Anel de linhas simples inspirado na nervura da folha de jiboia.',
+      spec: { Material: 'Prata 950', Acabamento: 'Polido', Peso: '~5 g' },
+      opcoes: { label: 'Aro', valores: ['12','13','14','15','16','17','18','19','20','Outro (informar)'] } },
+    { id: 'p3', nome: 'Pingente Grão', cat: 'Colares', preco: 390, img: 'grao-folha', badge: 'Coleção Ritual',
+      desc: 'Escultura minimalista inspirada no grão de café. Acompanha corrente de elos.',
+      spec: { Material: 'Prata 950', Coleção: 'Ritual', Corrente: 'Elos, prata' },
+      opcoes: { label: 'Corrente', valores: ['40 cm','45 cm','50 cm','60 cm'] } },
+    { id: 'p4', nome: 'Pingente Ankh', cat: 'Colares', preco: 390, img: 'ankh', badge: 'Coleção Ritual',
+      desc: 'Símbolo ancestral de vida, esculpido em prata. Acompanha corrente fina.',
+      spec: { Material: 'Prata 950', Coleção: 'Ritual', Corrente: 'Fina, prata' },
+      opcoes: { label: 'Corrente', valores: ['40 cm','45 cm','50 cm','60 cm'] } },
+    { id: 'p5', nome: 'Pulseira de Elos', cat: 'Pulseiras', preco: 520, img: 'pulseira', badge: 'Últimas peças',
+      desc: 'Elos alongados trabalhados um a um, com leve irregularidade que deixa cada pulseira única.',
+      spec: { Material: 'Prata 950', Acabamento: 'Polido' },
+      opcoes: { label: 'Comprimento', valores: ['17 cm','18 cm','19 cm','20 cm'] } },
+    { id: 'p6', nome: 'Anel Rastro', cat: 'Anéis', preco: 420, img: 'anel-livro', badge: 'Edição limitada',
+      desc: 'Anel escultural de acabamento oxidado, em edição limitada.',
+      spec: { Material: 'Prata 950', Acabamento: 'Oxidado' },
+      opcoes: { label: 'Aro', valores: ['12','13','14','15','16','17','18','19','20','Outro (informar)'] } },
+    { id: 'p7', nome: 'Alianças Personalizadas', cat: 'Alianças', preco: null, img: 'aliancas', badge: 'Ouro 18k · sob consulta',
+      desc: 'Desenhadas e trabalhadas sob medida em ouro 18k, para casamentos e rituais de compromisso.',
+      spec: { Material: 'Ouro 18k', Prazo: 'A combinar', Orçamento: 'Pelo WhatsApp' } }
+  ]
+};

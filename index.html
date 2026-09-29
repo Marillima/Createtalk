@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="pt-BR">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>CREATE Ceramic Studio + Alquimista Dourado</title>
+<meta name="description" content="Cerâmica e prata feitas à mão. Duas marcas, um mesmo cuidado: peças que começam como matéria e terminam como memória.">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Anton&family=Lora:ital@0;1&family=Quicksand:wght@400;600&display=swap">
+<style>
+*{box-sizing:border-box;margin:0}
+body{font-family:'Quicksand',system-ui,sans-serif;min-height:100svh;display:flex;flex-direction:column;background:#111;color:#fff}
+header{position:absolute;top:0;left:0;right:0;z-index:2;text-align:center;padding:28px 16px;letter-spacing:.3em;font-size:.72rem;text-transform:uppercase;color:#fff;text-shadow:0 1px 8px #0009}
+.split{flex:1;display:grid;grid-template-columns:1fr 1fr;position:relative}
+.door{position:relative;display:flex;flex-direction:column;justify-content:flex-end;padding:clamp(24px,5vw,72px);text-decoration:none;overflow:hidden;min-height:50svh}
+.door img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;transition:transform .8s}
+.door:hover img{transform:scale(1.05)}
+.door:after{content:"";position:absolute;inset:0}
+.door>*:not(img){position:relative;z-index:1}
+.c{background:#0f0f0f;color:#efe9df}.c:after{background:linear-gradient(to top,#0f0f0fee 5%,#0f0f0f55 65%)}
+.p{background:#fbf8f1;color:#25231e}.p:after{background:linear-gradient(to top,#fbf8f1f2 10%,#fbf8f133 65%)}
+.door small{letter-spacing:.22em;text-transform:uppercase;font-size:.7rem;opacity:.85}
+.door h2{font-size:clamp(2rem,4.5vw,3.6rem);line-height:1;margin:.4rem 0 .8rem}
+.c h2{font-family:'Anton',sans-serif;font-weight:400;text-transform:uppercase}
+.p h2{font-family:'Lora',serif;font-weight:400}
+.door p{max-width:36ch;margin-bottom:1.4rem;opacity:.92}
+.go{font-size:.8rem;letter-spacing:.14em;text-transform:uppercase;border-bottom:1px solid currentColor;align-self:flex-start;padding-bottom:3px}
+.tag{position:absolute;left:50%;top:38%;transform:translate(-50%,-50%);z-index:3;background:#0f0f0f;color:#efe9df;border:1px solid #fff4;padding:.9rem 1.4rem;text-align:center;font-family:'Lora',serif;font-style:italic;max-width:260px;font-size:.95rem}
+@media(max-width:760px){.split{grid-template-columns:1fr}.tag{display:none}}
+</style>
+</head>
+<body>
+<header>Portal autoral · cerâmica + prata</header>
+<main class="split">
+  <a class="door c" href="ceramica.html">
+    <img src="img/vaso-noite.webp" alt="Pratos de cerâmica com esmalte verde musgo" fetchpriority="high">
+    <small>Ateliê de cerâmica</small>
+    <h2>CREATE</h2>
+    <p>Canecas, vasos e potes moldados à mão, com esmaltes que guardam a marca do fogo.</p>
+    <span class="go">Entrar na cerâmica →</span>
+  </a>
+  <a class="door p" href="prata.html">
+    <img src="img/anel-livro.webp" alt="Anel de prata sobre livro aberto, entre folhas">
+    <small>Joias esculpidas</small>
+    <h2>Alquimista Dourado</h2>
+    <p>Prata e ouro trabalhados com a imperfeição da natureza. Rituais, presentes e alianças.</p>
+    <span class="go">Entrar na prata →</span>
+  </a>
+  <div class="tag">Peças que começam como matéria e terminam como memória.</div>
+</main>
+</body>
+</html>

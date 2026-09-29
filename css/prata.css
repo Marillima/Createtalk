@@ -1,0 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lora:wght@400;500&family=Inter:wght@400;500;600&display=swap');
+:root{--bg:#fbf8f1;--fg:#25231e;--card:#fff;--band:#efe9d8;--line:#25231e1f;--accent:#4d6b3c;--on-accent:#fff;--display:'Lora',serif;--dw:400;--body:'Inter',sans-serif;--r:14px}
+.brand img{height:38px;width:38px;object-fit:cover;border-radius:50%}
+.hero .row img{border-radius:var(--r);width:100%;aspect-ratio:4/3;object-fit:cover}
+@media (max-width:919px){.hero .row img{order:-1}}
+.price small{color:#b0623b;font-weight:500}
