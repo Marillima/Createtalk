@@ -1,4 +1,4 @@
-# CREATETalk Ceramic Studio + Alquimista Dourado
+# CREATEtalk Ceramic Studio + Alquimista Dourado
 
 Portal com duas lojas de peças feitas à mão
 
